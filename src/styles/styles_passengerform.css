@@ -1,0 +1,101 @@
+/* passenger-form.css */
+
+.passenger-form {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.react-file-reader{
+  width: 20%;
+  height: auto;
+}
+
+.upload-button {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+}
+
+.passenger-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.passenger-item label {
+  width: 150px;
+  font-weight: bold;
+  margin-right: 10px;
+  display:flex;
+  flex-flow: column;
+  flex-grow: inherit;
+}
+
+.passenger-item label select[name='gender']{
+  width:85px;
+}
+
+.passenger-item input[type='text'],
+.passenger-item select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.remove-passenger {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-passenger:hover {
+  background-color: #45a049;
+}
+
+.add-passenger {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-passenger:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .passenger-form {
+    width: 95%;
+  }
+}

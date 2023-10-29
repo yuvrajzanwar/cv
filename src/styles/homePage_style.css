@@ -1,0 +1,104 @@
+/* HomePage.css */
+
+/* Title bar */
+.title-bar {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* Booking options container */
+  .booking-options {
+    width: 80% ;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Trip type radios */
+  .trip-type {
+    display: flex;
+    flex-flow: row;
+    /* justify-content:space-around; */
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Booking details */
+  .booking-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin-bottom: 20px;
+  }
+
+  .booking-details label{
+    flex-direction: column;
+    width: auto;
+    margin:10px;
+  }
+  
+  /* Form styling */
+  .booking-options label {
+    display: flex;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .booking-options input[type="radio"],
+  .booking-options input[type="text"],
+  .booking-options input[type="date"],
+  .booking-options input[type="number"],
+  .booking-options select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Radio button labels */
+  .booking-options label input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Search button */
+  .search-button {
+    text-align: center;
+  }
+  
+  .booking-options button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .booking-options button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive layout for smaller screens */
+  @media (max-width: 768px) {
+    .booking-options {
+      width: 95%;
+    }
+    /* Adjust the input fields' width for smaller screens as needed */
+    .booking-options input[type="radio"],
+    .booking-options input[type="text"],
+    .booking-options input[type="date"],
+    .booking-options input[type="number"],
+    .booking-options select {
+      width: 100%;
+    }
+  }
+  
